@@ -17,7 +17,7 @@ defmodule Blog2Web.Router do
   scope "/", Blog2Web do
     pipe_through :browser
 
-    get "/", PageController, :home
+    resources "/", PostController
     resources "/posts", PostController
   end
 
